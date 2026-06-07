@@ -1,0 +1,28 @@
+{
+	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
+	"type": "connection",
+	"id": "govee-lan",
+	"name": "govee-lan",
+	"shortname": "Govee LAN",
+	"description": "Control Govee lights 100% locally over the Govee LAN (WLAN) API. No cloud, no API key.",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/arielramosbuera/companion-module-govee-lan.git",
+	"bugs": "https://github.com/arielramosbuera/companion-module-govee-lan/issues",
+	"maintainers": [
+		{
+			"name": "Ariel Ramos",
+			"email": "aramo@users.noreply.github.com"
+		}
+	],
+	"runtime": {
+		"type": "node22",
+		"api": "nodejs-ipc",
+		"apiVersion": "0.0.0",
+		"entrypoint": "../src/main.js"
+	},
+	"legacyIds": [],
+	"manufacturer": "Govee",
+	"products": ["Govee LAN-enabled lights"],
+	"keywords": ["lights", "lighting", "led", "govee", "lan", "local"]
+}

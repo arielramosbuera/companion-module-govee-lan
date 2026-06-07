@@ -1,0 +1,29 @@
+{
+	"name": "govee-lan",
+	"version": "1.0.0",
+	"main": "src/main.js",
+	"type": "module",
+	"description": "Control Govee lights 100% locally over the Govee LAN (WLAN) API",
+	"author": "Ariel Ramos",
+	"scripts": {
+		"format": "prettier -w .",
+		"package": "companion-module-build"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/arielramosbuera/companion-module-govee-lan.git"
+	},
+	"engines": {
+		"node": "^22.20 || >=24"
+	},
+	"dependencies": {
+		"@companion-module/base": "~2.0.4"
+	},
+	"devDependencies": {
+		"@companion-module/tools": "^3.0.1",
+		"prettier": "^3.8.3"
+	},
+	"prettier": "@companion-module/tools/.prettierrc.json",
+	"packageManager": "yarn@4.12.0"
+}
