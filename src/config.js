@@ -46,7 +46,7 @@ export function getConfigFields() {
 		{
 			type: 'textinput',
 			id: 'manualDevices',
-			label: 'Manual devices (one per line: "ip" or "ip,Friendly Name")',
+			label: 'Manual devices (Separate with semicolon: "ip;ip" or "ip,Friendly Name;ip,Friendly Name" without quotes)',
 			width: 12,
 			default: '',
 		},
