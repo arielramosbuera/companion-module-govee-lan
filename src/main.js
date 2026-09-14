@@ -136,7 +136,7 @@ export default class GoveeLanInstance extends InstanceBase {
 	applyManualDevices() {
 		const raw = (this.config.manualDevices || '').trim()
 		if (!raw) return
-		for (const line of raw.split(/\r?\n/)) {
+		for (const line of raw.split(/\s*[;\r\n]+\s*/)) {
 			const trimmed = line.trim()
 			if (!trimmed) continue
 			const [ipPart, ...nameParts] = trimmed.split(',')
